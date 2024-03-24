@@ -1,0 +1,3 @@
+{
+	"*.(ts|js|svelte)": "npm run lint"
+}

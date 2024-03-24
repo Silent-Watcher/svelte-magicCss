@@ -1,0 +1,57 @@
+{
+	"name": "svelte-magiccss",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "vite dev",
+		"format": "prettier --write .",
+		"prelint": "npm run format",
+		"lint": "prettier --check . && eslint .",
+		"prepare": "husky",
+		"preview": "vite preview"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-emoji",
+			"conventional": true
+		}
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.5.4",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/eslint": "^8.56.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.0",
+		"@typescript-eslint/parser": "^7.0.0",
+		"autoprefixer": "^10.4.16",
+		"commitizen": "^4.3.0",
+		"commitlint": "^19.2.1",
+		"commitlint-config-gitmoji": "^2.3.1",
+		"cz-conventional-changelog": "^3.3.0",
+		"cz-emoji": "1.3.2-canary.2",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"flowbite": "^2.3.0",
+		"flowbite-svelte": "^0.44.24",
+		"flowbite-svelte-icons": "^1.5.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"postcss": "^8.4.32",
+		"postcss-load-config": "^5.0.2",
+		"prettier": "^3.1.1",
+		"prettier-plugin-packagejson": "^2.4.12",
+		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.9",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"tailwindcss": "^3.3.6",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3"
+	}
+}
