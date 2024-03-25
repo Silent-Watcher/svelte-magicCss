@@ -1,10 +1,10 @@
 <script>
 	import ColorPicker, { ChromeVariant } from 'svelte-awesome-color-picker';
-	import Rslider from '../../components/UI/Rslider.svelte';
 	import Code from '../../components/Code.svelte';
+	import Rslider from '../../components/UI/Rslider.svelte';
 	let hex = '#2563eb';
-	let x = { min: -130, max: 130, values: [0] };
-	let y = { min: -130, max: 130, values: [0] };
+	let x = { min: -40, max: 40, values: [20] };
+	let y = { min: -40, max: 40, values: [10] };
 	let blur = { min: 0, max: 20, values: [10] };
 	$: textShadowValue = `text-shadow: ${x.values[0]}px ${y.values}px ${blur.values[0]}px ${hex}`;
 </script>
