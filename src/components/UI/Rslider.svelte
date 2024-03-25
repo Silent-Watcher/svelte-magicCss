@@ -8,4 +8,4 @@
 </script>
 
 <p class="mb-12 select-none dark:text-white">{label}</p>
-<RangeSlider pips float first="label" last="label" {min} {max} {values} />
+<RangeSlider pips float first="label" last="label" bind:min bind:max bind:values />
