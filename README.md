@@ -5,6 +5,8 @@
 The Magic CSS is an intuitive web application that allows you to generate CSS values for commonly used properties such as box-shadow, text-shadow, gradient, and border radius.
 With this app, you can easily create custom styles and enhance the visual appeal of your web projects without the need for manual calculations or complex CSS coding.
 
+[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)
+
 [![Star this project](https://img.shields.io/badge/-⭐%20Star%20this%20project-yellow?style=for-the-badge)](https://github.com/Silent-Watcher/cli-word-guessing-game)
 
 ## Table of Contents
