@@ -1,14 +1,32 @@
 <script lang="ts">
-	import { Heading, Mark } from 'flowbite-svelte';
-	import { DarkMode } from 'flowbite-svelte';
-	import { Button } from 'flowbite-svelte';
+	import { page } from '$app/stores';
+	import {
+		Button,
+		DarkMode,
+		Mark,
+		NavBrand,
+		NavHamburger,
+		NavLi,
+		NavUl,
+		Navbar
+	} from 'flowbite-svelte';
 	import { GithubSolid } from 'flowbite-svelte-icons';
+	$: activeUrl = $page.url.pathname;
 </script>
 
 <header class="my-10 select-none text-center">
-	<Heading tag="h1" class="text-3xl">
-		<Mark>Magic</Mark> CSS 🧙‍♂️
-	</Heading>
+	<Navbar>
+		<NavBrand href="/">
+			<Mark>Magic</Mark> CSS 🧙‍♂️
+		</NavBrand>
+		<NavHamburger />
+		<NavUl {activeUrl}>
+			<NavLi href="/">Home 🏠</NavLi>
+			<NavLi href="/gradient">Gradient 🔨</NavLi>
+			<NavLi href="/text-shadow">text shadow</NavLi>
+			<NavLi href="/border-radius">border radius</NavLi>
+		</NavUl>
+	</Navbar>
 </header>
 <div class="grid grid-cols-1 justify-items-center">
 	<section>
