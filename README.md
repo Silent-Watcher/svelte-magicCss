@@ -1,6 +1,6 @@
 # Magic CSS 🧙‍♂️
 
-![magic css]('https://github.com/Silent-Watcher/svelte-magicCss/blob/master/.github/banner.png')
+![banner](https://github.com/Silent-Watcher/svelte-magicCss/blob/master/.github/banner.png)
 
 The Magic CSS is an intuitive web application that allows you to generate CSS values for commonly used properties such as box-shadow, text-shadow, gradient, and border radius.
 With this app, you can easily create custom styles and enhance the visual appeal of your web projects without the need for manual calculations or complex CSS coding.
