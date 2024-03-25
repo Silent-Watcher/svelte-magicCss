@@ -1,12 +1,10 @@
 <script lang="ts">
+	import { Label, Select } from 'flowbite-svelte';
 	import ColorPicker, { ChromeVariant } from 'svelte-awesome-color-picker';
-	import { Select, Label } from 'flowbite-svelte';
-	import Rslider from '../../components/UI/Rslider.svelte';
 	import Code from '../../components/Code.svelte';
+	import Rslider from '../../components/UI/Rslider.svelte';
 	let angle = { min: 0, max: 360, values: [0] };
-	let hex1 = 'rgb(65, 105, 225)';
-	let hex2 = 'rgb(2, 0, 36)';
-	let selected: string = 'linear';
+	let [hex1, hex2, selected]: string[] = ['rgb(65, 105, 225)', 'rgb(2, 0, 36)', 'linear'];
 	let gradientTypes = [
 		{ value: 'linear', name: 'linear' },
 		{ value: 'radial', name: 'radial' }
